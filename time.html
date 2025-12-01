@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    
-    <title>Time</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Current Time and Clock</title>
+    <meta name="description" content="A dynamic clock displaying the current time">
+    <meta property="og:title" content="Current Time and Clock">
+    <meta property="og:description" content="A dynamic clock displaying the current time">
+    <meta property="og:image" content="screenshot.png">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="hero">
-        <div class="container">
-            <div class="clock">
-                <span id="hrs">00</span>
-                <span>:</span>
-                <span id="min">00</span>
-                <span>:</span>
-                <span id="sec">00</span>
-            </div>
-        </div>
-    </div>
-<script src="script.js"></script>
-    
+    <time aria-label="Current time" role="timer">
+        <span id="hrs">00</span>
+        <span>:</span>
+        <span id="min">00</span>
+        <span>:</span>
+        <span id="sec">00</span>
+    </time>
+    <noscript>JavaScript is required to display the current time. Please enable JavaScript in your browser settings.</noscript>
 </body>
 </html>
